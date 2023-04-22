@@ -98,9 +98,9 @@ function showListTencology(item) {
   if (listasProjects[item].length > 0) {
     listasProjects[item].forEach((element) => {
       cards.innerHTML += `<div class="card">
-         <img class="capture-project" src="${element.link}">
+         <img class="capture-project" src="${element.link}" alt="${element.description}">
          <div class="card-description">
-             <p class="description-project">${element.description}</p>
+             <h4 class="description-project">${element.description}</h4>
          </div>
          <div class="buttons">
              <a class="site" href="${element.site}" target="_blank">Demo</a>

@@ -229,6 +229,10 @@
   padding: 4px;
 }
 
+.description-project {
+  font-weight: 400;
+}
+
 .buttons {
   width: 100%;
   display: flex;
@@ -294,7 +298,8 @@
     font-size: 25px;
   }
 
-  .cv-body h2 {
+  .cv-body h2,
+  .cv-body h3 {
     font-size: 20px;
   }
 
@@ -308,9 +313,11 @@
     font-size: 20px;
   }
 
-  .cv-body h2 {
+  .cv-body h2,
+  .cv-body h3 {
     font-size: 15px;
   }
+  
 
   .cv-body p {
     font-size: 10px;
