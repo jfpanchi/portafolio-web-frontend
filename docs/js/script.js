@@ -100,7 +100,7 @@ function showListTencology(item) {
       cards.innerHTML += `<div class="card">
          <img class="capture-project" src="${element.link}" alt="${element.description}">
          <div class="card-description">
-             <h4 class="description-project">${element.description}</h4>
+             <p class="description-project">${element.description}</p>
          </div>
          <div class="buttons">
              <a class="site" href="${element.site}" target="_blank">Demo</a>
