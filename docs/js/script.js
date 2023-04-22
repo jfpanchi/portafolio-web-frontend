@@ -11,44 +11,49 @@ const posts = document.querySelectorAll(".post");
 // Listas de proyectos
 const listProjectsFront = [
   {
-    link: "./img/proyecto01-RelojDigital-FrontEndWeb.JPG",
+    link: "./img/front/proyecto01-RelojDigital-FrontEndWeb.JPG",
     description: "Reloj Digital Web",
-    repositorie: "https://github.com/jfpanchi/RelojDigital-FrontEndWeb",
     site: "https://jfpanchi.github.io/RelojDigital-FrontEndWeb/",
   },
   {
-    link: "./img/proyecto02-Presupuesto-FrontEndWeb.JPG",
+    link: "./img/front/proyecto02-Presupuesto-FrontEndWeb.JPG",
     description: "Sistema Web de Presupuesto - Ingresos y Egresos",
-    repositorie: "https://github.com/jfpanchi/Presupuesto-FrontEndWeb",
     site: "https://jfpanchi.github.io/Presupuesto-FrontEndWeb/",
   },
   {
-    link: "./img/proyecto03-PaletaDeColores-FrontEndWeb.JPG",
+    link: "./img/front/proyecto03-PaletaDeColores-FrontEndWeb.JPG",
     description: "Paleta de Colores",
-    repositorie: "https://github.com/jfpanchi/PaletaDeColores-FrontEndWeb",
     site: "https://jfpanchi.github.io/PaletaDeColores-FrontEndWeb/",
   },
   {
-    link: "./img/proyecto04-headphonesweb-frontend.JPG",
-    description: "Página principal Tienda de Audifonos",
-    repositorie: "https://github.com/jfpanchi/headphonesweb-frontend",
+    link: "./img/front/proyecto04-headphonesweb-frontend.JPG",
+    description: "Página principal para Tienda de Audifonos",
     site: "https://jfpanchi.github.io/headphonesweb-frontend/",
   },
   {
-    link: "./img/proyecto05-drumpsweb-frontend.JPG",
-    description: "Página principal Tienda de Instrumentos",
-    repositorie: "https://github.com/jfpanchi/drumsweb-front-homepage",
+    link: "./img/front/proyecto05-drumpsweb-frontend.JPG",
+    description: "Página principal para Tienda de Instrumentos",
     site: "https://jfpanchi.github.io/drumsweb-front-homepage/",
   },
   {
-    link: "./img/proyecto06-coffeestore-landing-frontend.JPG",
-    description: "Página principal Cafetería ",
-    repositorie: "https://github.com/jfpanchi/coffeestore-landing-frontend",
+    link: "./img/front/proyecto06-coffeestore-landing-frontend.JPG",
+    description: "Página principal para Cafetería ",
     site: "https://jfpanchi.github.io/coffeestore-landing-frontend/",
   },
 ];
 
-const listProjectsAngular = [];
+const listProjectsAngular = [
+  {
+    link: "./img/angular/proyecto01-plantapp-frontend-angular.jpeg",
+    description: "Aplicacion Web para Tienda de plantas",
+    site: "https://amazing-kangaroo-635e08.netlify.app/",
+  },
+  {
+    link: "./img/angular/proyecto02-quizzapp-frontend-angular.jpeg",
+    description: "Aplicacion Web para Crear y Realizar Cuestionarios",
+    site: "https://sparkling-starlight-5a3aa3.netlify.app/",
+  },
+];
 
 const listProjectsReact = [];
 
@@ -98,8 +103,7 @@ function showListTencology(item) {
              <p class="description-project">${element.description}</p>
          </div>
          <div class="buttons">
-             <a class="repositorie" href="${element.repositorie}" target="_blank" >Código</a>
-             <a class="site" href="${element.site}" target="_blank">Proyecto</a>
+             <a class="site" href="${element.site}" target="_blank">Demo</a>
          </div>
        </div>`;
     });
