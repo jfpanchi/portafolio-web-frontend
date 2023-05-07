@@ -49,6 +49,46 @@
   text-align: justify;
 }
 
+.cv-body h1 {
+  font-size: 1rem;
+}
+
+.cv-body h2,
+.cv-body h3 {
+  font-size: 1.2rem;
+}
+
+.cv-body p {
+  font-size: 1rem;
+}
+
+
+.cv-download {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+  z-index: 4;
+}
+
+.cv-download a {
+  text-align: center;
+  width: 100%;
+  background-color: #181b26;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.cv-download a:hover {
+  background-color: #0d688c;
+}
+
 .cv-footer {
   display: flex;
   justify-content: center;
@@ -278,6 +318,10 @@
   border-radius: 0 8px 8px 0;
 }
 
+.post:hover {
+  transform: scale(120%);
+}
+
 .post-select {
   background-color: #0d688c;
 }
@@ -293,38 +337,82 @@
   text-align: right;
 }
 
-@media screen and (max-width: 1400px){
-  .cv-body h1 {
-    font-size: 25px;
+@media (max-width: 920px) and (min-height: 560px) {
+  .container {
+    flex-direction: column;
+    background-color: #181b26;
   }
 
-  .cv-body h2,
-  .cv-body h3 {
-    font-size: 20px;
+  .main {
+    width: auto;
+    height: auto;
   }
 
-  .cv-body p {
-    font-size: 15px;
+  .container {
+    width: auto;
+    height: auto;
   }
+
+  .cv {
+    width: 82vw;
+    height: 80vh;
+    margin: 24px;
+  } 
+
+  .portafolio {
+    margin: 24px;
+    width: 82vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .folder-front {
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .folder-back {
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .paper {
+    width: 72vw;
+    height: 75vh;
+  }
+
+  .cards {
+    width: 72vw;
+    height: 75vh;
+  }
+
+  .card {
+    width: 240px;
+    height: 300px;
+  }
+
+  .posts {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .post {
+    border-top: 10px #8f94a6 solid;
+    border-left: none;
+    border-radius: 0 0 8px 8px;
+    color: black;
+  }
+
+  .post h1 {
+    font-size: small;
+    font-weight: 500;
+    opacity: 1;
+  }
+
 }
 
-@media screen and (max-width: 1144px){
-  .cv-body h1 {
-    font-size: 20px;
-  }
-
-  .cv-body h2,
-  .cv-body h3 {
-    font-size: 15px;
-  }
-  
-
-  .cv-body p {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 414px){
+@media (max-width: 560px) or (max-height: 560px) {
   .container {
     flex-direction: column;
     background-color: #181b26;
