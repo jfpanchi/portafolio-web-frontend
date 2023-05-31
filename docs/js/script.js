@@ -36,23 +36,39 @@ const listProjectsFront = [
     site: "https://jfpanchi.github.io/drumsweb-front-homepage/",
   },
   {
-    link: "./img/front/proyecto06-coffeestore-landing-frontend.JPG",
-    description: "Página principal para Cafetería ",
-    site: "https://jfpanchi.github.io/coffeestore-landing-frontend/",
+    link: "./img/front/proyecto07-codificador-frontend.JPG",
+    description: "Sistema Web para encriptar y desencriptar mensajes",
+    site: "https://delicate-stroopwafel-8e2fe2.netlify.app/",
   },
 ];
 
 const listProjectsAngular = [
   {
     link: "./img/angular/proyecto01-plantapp-frontend-angular.jpeg",
-    description: "Aplicacion Web para Tienda de plantas",
+    description: "Aplicación Web para tienda de plantas",
     site: "https://amazing-kangaroo-635e08.netlify.app/",
   },
   {
     link: "./img/angular/proyecto02-quizzapp-frontend-angular.jpeg",
-    description: "Aplicacion Web para Crear y Realizar Cuestionarios",
+    description: "Aplicación Web para crear y realizar cuestionarios",
     site: "https://sparkling-starlight-5a3aa3.netlify.app/",
   },
+  {
+    link: "./img/angular/proyecto03-gymapp-frontend-angular.jpeg",
+    description: "Aplicación Web para administrar inscripciones de gimnasio",
+    site: "https://delicate-paletas-7ddc65.netlify.app/",
+  },
+  {
+    link: "./img/angular/proyecto04-eventapp-frontend-angular.jpeg",
+    description: "Aplicación Web para boletería de eventos",
+    site: "https://merry-liger-50007d.netlify.app/",
+  },
+  {
+    link: "./img/angular/proyecto05-tracksapp-frontend-angular.jpeg",
+    description: "Aplicación Web de biblioteca de música",
+    site: "https://velvety-daffodil-296ecd.netlify.app/",
+  },
+
 ];
 
 const listProjectsReact = [];
@@ -98,7 +114,7 @@ function showListTencology(item) {
   if (listasProjects[item].length > 0) {
     listasProjects[item].forEach((element) => {
       cards.innerHTML += `<div class="card">
-         <img class="capture-project" src="${element.link}" alt="${element.description}">
+         <img class="capture-project" src="${element.link}" loading="lazy" alt="${element.description}">
          <div class="card-description">
              <p class="description-project">${element.description}</p>
          </div>
