@@ -12,12 +12,12 @@ const posts = document.querySelectorAll(".post");
 const listProjectsFront = [
   {
     link: "./img/front/proyecto01-RelojDigital-FrontEndWeb.JPG",
-    description: "Reloj Digital Web",
+    description: "Reloj digital web",
     site: "https://jfpanchi.github.io/RelojDigital-FrontEndWeb/",
   },
   {
     link: "./img/front/proyecto02-Presupuesto-FrontEndWeb.JPG",
-    description: "Sistema Web de Presupuesto - Ingresos y Egresos",
+    description: "Sistema web de Presupuesto - Ingresos y Egresos",
     site: "https://jfpanchi.github.io/Presupuesto-FrontEndWeb/",
   },
   {
@@ -27,17 +27,22 @@ const listProjectsFront = [
   },
   {
     link: "./img/front/proyecto04-headphonesweb-frontend.JPG",
-    description: "Página principal para Tienda de Audifonos",
+    description: "Página principal para tienda de Audifonos",
     site: "https://jfpanchi.github.io/headphonesweb-frontend/",
   },
   {
     link: "./img/front/proyecto05-drumpsweb-frontend.JPG",
-    description: "Página principal para Tienda de Instrumentos",
+    description: "Página principal para tienda de Instrumentos",
     site: "https://jfpanchi.github.io/drumsweb-front-homepage/",
   },
   {
+    link: "./img/front/proyecto06-coffeestore-landing-frontend.JPG",
+    description: "Página principal para cafetería",
+    site: "https://jfpanchi.github.io/coffeestore-landing-frontend/",
+  },
+  {
     link: "./img/front/proyecto07-codificador-frontend.JPG",
-    description: "Sistema Web para encriptar y desencriptar mensajes",
+    description: "Sistema web para encriptar y desencriptar mensajes",
     site: "https://delicate-stroopwafel-8e2fe2.netlify.app/",
   },
 ];
@@ -45,33 +50,44 @@ const listProjectsFront = [
 const listProjectsAngular = [
   {
     link: "./img/angular/proyecto01-plantapp-frontend-angular.jpeg",
-    description: "Aplicación Web para tienda de plantas",
+    description: "Aplicación web para tienda de plantas",
     site: "https://amazing-kangaroo-635e08.netlify.app/",
   },
   {
     link: "./img/angular/proyecto02-quizzapp-frontend-angular.jpeg",
-    description: "Aplicación Web para crear y realizar cuestionarios",
+    description: "Aplicación web para crear y realizar cuestionarios",
     site: "https://sparkling-starlight-5a3aa3.netlify.app/",
   },
   {
     link: "./img/angular/proyecto03-gymapp-frontend-angular.jpeg",
-    description: "Aplicación Web para administrar inscripciones de gimnasio",
+    description: "Aplicación web para administrar inscripciones de gimnasio",
     site: "https://delicate-paletas-7ddc65.netlify.app/",
   },
   {
     link: "./img/angular/proyecto04-eventapp-frontend-angular.jpeg",
-    description: "Aplicación Web para boletería de eventos",
+    description: "Aplicación web para boletería de eventos",
     site: "https://merry-liger-50007d.netlify.app/",
   },
   {
     link: "./img/angular/proyecto05-tracksapp-frontend-angular.jpeg",
-    description: "Aplicación Web de biblioteca de música",
+    description: "Aplicación web de biblioteca de música",
     site: "https://velvety-daffodil-296ecd.netlify.app/",
   },
 
 ];
 
-const listProjectsReact = [];
+const listProjectsReact = [
+  {
+    link: "./img/react/proyecto01-recipeapp-frontend-react.jpeg",
+    description: "Blog de recetas",
+    site: "https://storied-pudding-024b50.netlify.app/", 
+  },
+  {
+    link: "./img/react/proyecto02-passwarehouseapp-frontend-react.jpeg",
+    description: "Aplicación web para gestionar contraseñas seguras",
+    site: "https://stately-florentine-1be81e.netlify.app/", 
+  }
+];
 
 const listProjectsVue = [];
 
