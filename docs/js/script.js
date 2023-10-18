@@ -86,6 +86,11 @@ const listProjectsReact = [
     link: "./img/react/proyecto02-passwarehouseapp-frontend-react.jpeg",
     description: "Aplicación web para gestionar contraseñas seguras",
     site: "https://stately-florentine-1be81e.netlify.app/", 
+  },
+  {
+    link: "./img/react/proyecto03-readingplan-frontend-react.jpeg",
+    description: "Aplicación web para gestionar planes de lectura personal",
+    site: "https://sage-flan-06df4b.netlify.app/", 
   }
 ];
 
