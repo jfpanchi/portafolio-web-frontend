@@ -94,7 +94,13 @@ const listProjectsReact = [
   }
 ];
 
-const listProjectsVue = [];
+const listProjectsVue = [
+  {
+    link: "./img/vue/proyecto01-brutalweather-frontend-vue.jpeg",
+    description: "Aplicación web de clima y pronóstico",
+    site: "https://bespoke-licorice-8174f0.netlify.app/", 
+  },
+];
 
 const listasProjects = [
   listProjectsFront,
