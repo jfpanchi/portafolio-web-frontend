@@ -11,29 +11,9 @@ const posts = document.querySelectorAll(".post");
 // Listas de proyectos
 const listProjectsFront = [
   {
-    link: "./img/front/proyecto01-RelojDigital-FrontEndWeb.JPG",
-    description: "Reloj digital web",
-    site: "https://jfpanchi.github.io/RelojDigital-FrontEndWeb/",
-  },
-  {
     link: "./img/front/proyecto02-Presupuesto-FrontEndWeb.JPG",
     description: "Sistema web de Presupuesto - Ingresos y Egresos",
     site: "https://jfpanchi.github.io/Presupuesto-FrontEndWeb/",
-  },
-  {
-    link: "./img/front/proyecto03-PaletaDeColores-FrontEndWeb.JPG",
-    description: "Paleta de Colores",
-    site: "https://jfpanchi.github.io/PaletaDeColores-FrontEndWeb/",
-  },
-  {
-    link: "./img/front/proyecto04-headphonesweb-frontend.JPG",
-    description: "Página principal para tienda de Audifonos",
-    site: "https://jfpanchi.github.io/headphonesweb-frontend/",
-  },
-  {
-    link: "./img/front/proyecto05-drumpsweb-frontend.JPG",
-    description: "Página principal para tienda de Instrumentos",
-    site: "https://jfpanchi.github.io/drumsweb-front-homepage/",
   },
   {
     link: "./img/front/proyecto06-coffeestore-landing-frontend.JPG",
@@ -59,46 +39,35 @@ const listProjectsAngular = [
     site: "https://sparkling-starlight-5a3aa3.netlify.app/",
   },
   {
-    link: "./img/angular/proyecto03-gymapp-frontend-angular.jpeg",
-    description: "Aplicación web para administrar inscripciones de gimnasio",
-    site: "https://delicate-paletas-7ddc65.netlify.app/",
-  },
-  {
     link: "./img/angular/proyecto04-eventapp-frontend-angular.jpeg",
     description: "Aplicación web para boletería de eventos",
     site: "https://merry-liger-50007d.netlify.app/",
   },
-  {
-    link: "./img/angular/proyecto05-tracksapp-frontend-angular.jpeg",
-    description: "Aplicación web de biblioteca de música",
-    site: "https://velvety-daffodil-296ecd.netlify.app/",
-  },
-
 ];
 
 const listProjectsReact = [
   {
     link: "./img/react/proyecto01-recipeapp-frontend-react.jpeg",
     description: "Blog de recetas",
-    site: "https://storied-pudding-024b50.netlify.app/", 
+    site: "https://storied-pudding-024b50.netlify.app/",
   },
   {
     link: "./img/react/proyecto02-passwarehouseapp-frontend-react.jpeg",
     description: "Aplicación web para gestionar contraseñas seguras",
-    site: "https://stately-florentine-1be81e.netlify.app/", 
+    site: "https://stately-florentine-1be81e.netlify.app/",
   },
   {
     link: "./img/react/proyecto03-readingplan-frontend-react.jpeg",
     description: "Aplicación web para gestionar planes de lectura personal",
-    site: "https://sage-flan-06df4b.netlify.app/", 
-  }
+    site: "https://sage-flan-06df4b.netlify.app/",
+  },
 ];
 
 const listProjectsVue = [
   {
     link: "./img/vue/proyecto01-brutalweather-frontend-vue.jpeg",
     description: "Aplicación web de clima y pronóstico",
-    site: "https://bespoke-licorice-8174f0.netlify.app/", 
+    site: "https://bespoke-licorice-8174f0.netlify.app/",
   },
 ];
 
@@ -164,6 +133,17 @@ function showListTencology(item) {
 function show(item) {
   showSeleccion(item);
   showListTencology(item);
+  scrollToTop();
+}
+
+function scrollToTop() {
+  const cardsElement = document.querySelector(".cards");
+  if (cardsElement) {    
+    cardsElement.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
 }
 
 show(0);
